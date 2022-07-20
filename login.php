@@ -1,5 +1,4 @@
 <html>
- 
 <head>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
@@ -14,12 +13,11 @@
     <center>
       
       <div class="section"></div>
- 
-      <h5 class="indigo-text">Form Login</h5>
       <div class="section"></div>
  
       <div class="container">
         <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+          <h5 class="indigo-text">Form Login</h5>
  
           <form class="col s12" method="post" action="proseslog.php">
             <div class='row'>
@@ -43,17 +41,18 @@
 								<a class='pink-text' href='#!'><b>Forgot Password?</b></a>
 							</label>
             </div>
- 
-            <br />
             <center>
               <div class='row'>
                 <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
               </div>
             </center>
+            <span>
+              <h6>Don't have an account? <a href="register.php">Create account</a></h6>
+            </span>
           </form>
         </div>
       </div>
-      <a href="register.php">Create account</a>
+      
     </center>
  
     <div class="section"></div>

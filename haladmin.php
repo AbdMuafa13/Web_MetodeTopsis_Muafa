@@ -25,29 +25,41 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script>
 	$(document).ready(function(){
-	  $(".button-collapse").sideNav();
 	  $(".dropdown-button").dropdown();
+	});
+
+	$(function(){
+		$(".button-collapse").sideNav();
 	});
 	</script>
 </head>
 <body>
-	<div class="navbar-fixed">
-	<nav>
-    	<div class="container">
-						<div class="nav-wrapper">
-								<ul class="left" style="margin-left: -52px;">
-									<li><a class="active" href="haladmin.php">HOME</a></li>
-									<li><a href="rekomendasi.php">REKOMENDASI</a></li>
-                                    <li><a href="daftar_user.php">DAFTAR USER</a></li>
-									<li><a href="daftar_hp.php">DAFTAR SMARTPHONE</a></li>
-									<li><a href="#about">TENTANG</a></li>
-                                    <li><a href="logout.php">LOGOUT</a></li>
-								</ul>
-						</div>
-					
-        </div>
+	<div>
+		<nav class="white">
+    		<div class="container nav-wrapper">
+				<a href="#" data-activates="mobile-menu" class="button-collapse"><i class="black-text material-icons">menu</i></a>
+				<div>
+					<ul class="left hide-on-med-and-down">
+						<li><a class="active" href="haladmin.php">HOME</a></li>
+						<li><a href="rekomendasi.php">REKOMENDASI</a></li>
+                        <li><a href="daftar_user.php">DAFTAR USER</a></li>
+						<li><a href="daftar_hp.php">DAFTAR SMARTPHONE</a></li>
+						<li><a href="#about">TENTANG</a></li>
+                        <li><a href="logout.php">LOGOUT</a></li>
+					</ul>
+					<ul id="mobile-menu" class="side-nav" >
+						<li style="margin-top: 20px;"></li>
+						<li><a class="active" href="haladmin.php">HOME</a></li>
+						<li><a href="rekomendasi.php">REKOMENDASI</a></li>
+                        <li><a href="daftar_user.php">DAFTAR USER</a></li>
+						<li><a href="daftar_hp.php">DAFTAR SMARTPHONE</a></li>
+						<li><a href="#about">TENTANG</a></li>
+                        <li><a href="logout.php">LOGOUT</a></li>
+					</ul>
+				</div>
+        	</div>
 		</nav>
-		</div>
+	</div>
     <!-- Body Start -->
 
 		<!-- Jumbotron Start -->
@@ -59,8 +71,8 @@
 						<h5 class="header jarak-button col s12 light" style="margin-bottom: 0px; font-size: 26px">PEMILIHAN SMARTPHONE</h5>
 					</div>
 					<div class="row center" \>
-								<a href="rekomendasi.php" id="download-button" class="waves-effect waves-light btn-large" style="margin-top: 40px">Pilih Rekomendasi</a>
-							</div>
+						<a href="rekomendasi.php" id="download-button" class="waves-effect waves-light btn-large" style="margin-top: 40px">Pilih Rekomendasi</a>
+					</div>
 				</div>
 			</div>
 			<div class="parallax"><img src="assets/image/pixel.jpg" alt="Laptop"></div>
@@ -78,9 +90,10 @@
 						</div>
 			    	<div class="col s6">
 			    		<center><h5 class="header" style="margin-left: 0px; margin-bottom: 0px; margin-top: 25px; color: #635c73">INFO METODE</h5></center><br>
-							<p style="text-align: justify; padding-left: 16px;">Metode yang digunakan adalah metode TOPSIS. Metode TOPSIS adalah salah satu metode penyelesaian pada sistem pendukung keputusan. Metode ini mengevaluasi beberapa alternatif terhadap sekumpulan atribuat atau kriteria, dimana setiap atribut saling tidak bergantung satu dengan yang lainnya.
-							</p>
-							</div>
+						<p style="text-align: justify; padding-left: 16px;">
+							Metode yang digunakan adalah metode TOPSIS. Metode TOPSIS adalah salah satu metode penyelesaian pada sistem pendukung keputusan. Metode ini mengevaluasi beberapa alternatif terhadap sekumpulan atribuat atau kriteria, dimana setiap atribut saling tidak bergantung satu dengan yang lainnya.
+						</p>
+					</div>
 		    	</div>
 	    	</div>
 		</div>

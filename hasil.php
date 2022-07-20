@@ -79,32 +79,39 @@ function JarakIplus($aplus,$bob){
 </head>
 
 <body>
-	<div class="navbar-fixed">
-		<nav>
-			<div class="container">
-
-				<div class="nav-wrapper">
-					<ul class="left" style="margin-left: -52px;">
-						<li><a href="index.php">HOME</a></li>
+	<div>
+		<nav class="white">
+    		<div class="container nav-wrapper">
+				<a href="#" data-activates="mobile-menu" class="button-collapse"><i class="black-text material-icons">menu</i></a>
+				<div>
+					<ul class="left hide-on-med-and-down">
+						<li><a class="active" href="haladmin.php">HOME</a></li>
 						<li><a href="rekomendasi.php">REKOMENDASI</a></li>
+                        <li><a href="daftar_user.php">DAFTAR USER</a></li>
 						<li><a href="daftar_hp.php">DAFTAR SMARTPHONE</a></li>
-						<li><a class="active" href="hasil.php">PERHITUNGAN</a></li>
 						<li><a href="#about">TENTANG</a></li>
+                        <li><a href="logout.php">LOGOUT</a></li>
+					</ul>
+					<ul id="mobile-menu" class="side-nav" >
+						<li style="margin-top: 20px;"></li>
+						<li><a class="active" href="haladmin.php">HOME</a></li>
+						<li><a href="rekomendasi.php">REKOMENDASI</a></li>
+                        <li><a href="daftar_user.php">DAFTAR USER</a></li>
+						<li><a href="daftar_hp.php">DAFTAR SMARTPHONE</a></li>
+						<li><a href="#about">TENTANG</a></li>
+                        <li><a href="logout.php">LOGOUT</a></li>
 					</ul>
 				</div>
-
-			</div>
+        	</div>
 		</nav>
 	</div>
 	<!-- Body Start -->
 
 	<!-- Daftar Laptop Start -->
-	<div style="background-color: #efefef">
+	<div>
 		<div class="container">
 			<div class="section-card" style="padding: 20px 0px">
 				<!--   Icon Section   -->
-
-
 				<center>
 					<h4 class="header" style="margin-left: 24px; margin-bottom: 0px; margin-top: 24px; color: #635c73;">HASIL REKOMENDASI SMARTPHONE</h4>
 				</center>
@@ -496,7 +503,7 @@ function JarakIplus($aplus,$bob){
 							</div>
 						</li>
 					</ul>
-					<div class="row center" \>
+					<div class="row center">
 						<a href="rekomendasi.php" id="download-button" class="waves-effect waves-light btn" style="margin-top: 0px">Hitung Rekomendasi Ulang</a>
 					</div>
 				</div>
@@ -533,6 +540,9 @@ function JarakIplus($aplus,$bob){
 			$(document).ready(function(){
 				$('.parallax').parallax();
 				$('.modal').modal();
+			});
+			$(function(){
+				$(".button-collapse").sideNav();
 			});
 		</script>
 	</body>

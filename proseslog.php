@@ -22,13 +22,11 @@ if($cek > 0){
  
 	// cek jika user login sebagai admin
 	if($data['role']=="admin"){
- 
 		// buat session login dan username
 		$_SESSION['username'] = $username;
 		$_SESSION['role'] = "admin";
 		// alihkan ke halaman dashboard admin
 		header("location:haladmin.php");
- 
 	// cek jika user login sebagai pegawai
 	}else if($data['role']=="user"){
 		// buat session login dan username
@@ -36,10 +34,8 @@ if($cek > 0){
 		$_SESSION['role'] = "user";
 		// alihkan ke halaman dashboard pegawai
 		header("location:haluser.php");
- 
 	// cek jika user login sebagai pengurus
 	}else{
- 
 		// alihkan ke halaman login kembali
 		header("location:login.php?pesan=gagal");
 	}	

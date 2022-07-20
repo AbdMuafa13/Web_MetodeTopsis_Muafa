@@ -43,24 +43,32 @@ include('koneksi.php');
 
 </head>
 <body>
-	<div class="navbar-fixed">
-	<nav>
-    	<div class="container">
-					
-						<div class="nav-wrapper">
-								<ul class="left" style="margin-left: -52px;">
-									<li><a  href="haladmin.php">HOME</a></li>
-									<li><a href="rekomendasi.php">REKOMENDASI</a></li>
-                                    <li><a class="active" href="daftar_user.php">DAFTAR USER</a></li>
-									<li><a href="daftar_hp.php">DAFTAR SMARTPHONE</a></li>
-									<li><a href="#about">TENTANG</a></li>
-                                    <li><a href="logout.php">LOGOUT</a></li>
-								</ul>
-						</div>
-					
-        </div>
+	<div>
+		<nav class="white">
+    		<div class="container nav-wrapper">
+				<a href="#" data-activates="mobile-menu" class="button-collapse"><i class="black-text material-icons">menu</i></a>
+				<div>
+					<ul class="left hide-on-med-and-down">
+						<li><a class="active" href="haladmin.php">HOME</a></li>
+						<li><a href="rekomendasi.php">REKOMENDASI</a></li>
+                        <li><a href="daftar_user.php">DAFTAR USER</a></li>
+						<li><a href="daftar_hp.php">DAFTAR SMARTPHONE</a></li>
+						<li><a href="#about">TENTANG</a></li>
+                        <li><a href="logout.php">LOGOUT</a></li>
+					</ul>
+					<ul id="mobile-menu" class="side-nav" >
+						<li style="margin-top: 20px;"></li>
+						<li><a class="active" href="haladmin.php">HOME</a></li>
+						<li><a href="rekomendasi.php">REKOMENDASI</a></li>
+                        <li><a href="daftar_user.php">DAFTAR USER</a></li>
+						<li><a href="daftar_hp.php">DAFTAR SMARTPHONE</a></li>
+						<li><a href="#about">TENTANG</a></li>
+                        <li><a href="logout.php">LOGOUT</a></li>
+					</ul>
+				</div>
+        	</div>
 		</nav>
-		</div>
+	</div>
 		<!-- Body Start -->
 
 		<!-- Daftar hp Start -->
@@ -228,6 +236,9 @@ include('koneksi.php');
     		"paging": false
 		});
 	    });
+		$(function(){
+			$(".button-collapse").sideNav();
+		});
 	</script>
 </body>
 </html>
